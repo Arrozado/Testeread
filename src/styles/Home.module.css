@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  max-width: 980px;
+  margin: auto;
+  flex-direction: column;
+}
+
+.topDistance {
+  margin-top: 18px;
+}
+
+.sections {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.aside {
+  margin-left: auto;
+  margin-left: 60px;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
