@@ -1,3 +1,5 @@
+
+// NOTE estilo da pagina principal (src/index.tsx)
 import styled from "styled-components";
 
 export const Container = styled.div`
