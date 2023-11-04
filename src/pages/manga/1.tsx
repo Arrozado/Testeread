@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Banner from '../../components/Banner';
 import Header from '../../components/Header';
-import MangaCover from '../../components/Manga'; // Importe o componente MangaCover aqui
+import Manga from '../../components/Manga'; // Importe o componente MangaCover aqui
 
 // interface for mangaScreen
 interface MangaScreenProps {}
