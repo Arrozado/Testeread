@@ -1,6 +1,7 @@
 import React from 'react'
 import Banner from '../components/Banner'
 import Header from '../components/Header'
+import Manga from '../components/Manga'
 import { HomeProps } from '../globals/types'
 import styles from '../styles/Home.module.css'
 
