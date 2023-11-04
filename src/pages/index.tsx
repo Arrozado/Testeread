@@ -9,7 +9,7 @@ import { AlignText, CardListVertical, Container, Sections, Content, Aside, SideB
 
 const Home = (props: HomeProps) => {
 
-  return (
+    return (
     <div className={styles.container}>
       <Header />
       <div className={styles.topDistance}>
@@ -17,27 +17,22 @@ const Home = (props: HomeProps) => {
       </div>
 
       <div className={styles.topDistance}>
-
         <Content>
           <Sections>
-            <h1> te </h1>
-
+            <h1>Lista de Mangás</h1>
+            <div className="manga-grid">
+              {props.manga_banner.map((manga) => (
+                <MangaCard key={manga.id} image={manga.image} name={manga.name} />
+              ))}
+            </div>
           </Sections>
-
           <Aside>
-            <h1> te </h1>
-
+            <h1>te</h1>
           </Aside>
-
         </Content>
-
-
-
       </div>
-
-
     </div>
-  )
+  );
 }
 
 export async function getServerSideProps() {
